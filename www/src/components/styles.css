@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:wght@400;500;700&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans+Condensed:wght@700&display=swap'); */
+/*
+font-family: 'Fira Code', monospace;
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Lora', serif;
+*/
+
+:root {
+  --bg-color: #ffffff;
+  --bg-secondary-color: #fff;
+  --color-primary: #ffcc26;
+  --color-lightGrey: #d0d0d0;
+  --color-grey: #303030;
+  --color-darkGrey: #303030;
+  --color-error: #ff5470;
+  --color-success: #00ebc7;
+  --grid-maxWidth: 120rem;
+  --grid-gutter: 2rem;
+  --font-size: 1.8rem;
+  --font-color: #1b2d45;
+  --font-family-sans: 'Roboto', sans-serif;
+  --font-family-serif: 'Lora', serif;
+  --font-family-mono: 'Fira Code', monaco, "Consolas", "Lucida Console", monospace;
+  /* My Styles */
+  --content-bg-color: #ffffff;
+  --content-padding: 3rem;
+}
+
+body.dark {
+      --bg-color: #111;
+      --bg-secondary-color: #131316;
+      --font-color: #f5f5f5;
+      --color-grey: #ccc;
+      --color-darkGrey: #777;
+    }
+
+.main.container {
+  max-width: 902px;
+  background: #fff;
+}
+
+#gatsby-focus-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1, h2 {
+  font-family: var(--font-family-sans);
+  color: #00214d;
+}
+
+/* Post Styles */
+main h1 {
+  font-family: var(--font-family-sans);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3.4em;
+  line-height: 70px;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main p {
+  font-family: var(--font-family-serif);
+  font-size: 18px;
+  line-height: 28px;
+}

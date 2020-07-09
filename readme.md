@@ -1,3 +1,0 @@
-# Omartinez.co
-
-> Personal Portfolio
