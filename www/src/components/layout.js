@@ -13,8 +13,16 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 import "./styles.css"
+import SEO from "../components/seo"
 
 const Layout = ({ children }) => {
+  if (
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+  ) {
+    // document.body.classList.add("dark")
+  }
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -25,15 +33,9 @@ const Layout = ({ children }) => {
     }
   `)
 
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
-    // document.body.classList.add("dark")
-  }
-
   return (
     <>
+      <SEO title={data.site.siteMetadata.title} />
       <Header siteTitle={data.site.siteMetadata.title} />
       <div className="main container">
         <div className="row">
