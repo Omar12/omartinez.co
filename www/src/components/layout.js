@@ -16,12 +16,12 @@ import "./styles.css"
 import SEO from "../components/seo"
 
 const Layout = ({ children }) => {
-  if (
-    window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
-  ) {
-    // document.body.classList.add("dark")
-  }
+  // if (
+  //   window.matchMedia &&
+  //   window.matchMedia("(prefers-color-scheme: dark)").matches
+  // ) {
+  //   document.body.classList.add("dark")
+  // }
 
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

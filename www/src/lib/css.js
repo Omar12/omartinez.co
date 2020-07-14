@@ -8,7 +8,9 @@ export const fontSizes = {
   medium: "18px",
 }
 
-export default CSS = {
+const CSS = {
   colors,
   fontSizes,
 }
+
+export default CSS
