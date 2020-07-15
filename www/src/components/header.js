@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import { colors } from "../lib/css"
 
 const Header = ({ siteTitle }) => (
   <StyledHeader>
@@ -18,11 +17,9 @@ const Header = ({ siteTitle }) => (
   </StyledHeader>
 )
 
-const { carbon, yellow } = colors
-
 const StyledHeader = styled.header`
-  background: ${yellow};
-  border-top: 4px solid ${carbon};
+  background: var(--color-primary);
+  border-top: 4px solid var(--color-grey);
 `
 
 const H1Title = styled.h1`
@@ -39,7 +36,7 @@ const H1Title = styled.h1`
 `
 
 const LinkTitle = styled(Link)`
-  color: ${carbon};
+  color: var(--color-grey);
 `
 
 Header.propTypes = {

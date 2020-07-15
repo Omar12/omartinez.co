@@ -1,22 +1,20 @@
-// TODO Stick footer to bottom of page
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
 import About from "../pages/about"
-import CSS from "../lib/css"
 
 const Footer = () => (
   <StyledFooter>
     <FooterDivider>
       <svg
-        data-name="Layer 1"
+        data-name="Divider"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
       >
         <path
           d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-          class="shape-fill"
+          className="shape-fill"
         ></path>
       </svg>
     </FooterDivider>
@@ -31,12 +29,10 @@ const Footer = () => (
   </StyledFooter>
 )
 
-const { carbon, yellow } = CSS.colors
-
 const StyledFooter = styled.footer`
   position: relative;
-  background: ${yellow};
-  color: ${carbon};
+  background: var(--color-primary);
+  color: var(--color-grey);
 
   .main.container {
     padding-top: 30px;
@@ -61,7 +57,7 @@ const FooterDivider = styled.div`
   }
 
   .shape-fill {
-    fill: #ffffff;
+    fill: var(--content-bg-color);
   }
 `
 

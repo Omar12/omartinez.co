@@ -70,8 +70,3 @@ main p {
   font-size: 18px;
   line-height: 28px;
 }
-
-.main a {
-  color: var(--font-color);
-  border-bottom: 2px solid var(--color-grey);
-}
