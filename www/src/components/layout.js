@@ -11,8 +11,6 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import "./layout.css"
-import "./styles.css"
 import SEO from "../components/seo"
 
 const Layout = ({ children }) => {
@@ -34,16 +32,14 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col justify-center bg-steel-gray-500 text-anakiwa-500">
       <SEO title={data.site.siteMetadata.title} />
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div className="main container">
-        <div className="row">
-          <main className="col content">{children}</main>
-        </div>
+      <div className="relative px-10 py-6 lg:container">
+        <main className="prose">{children}</main>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

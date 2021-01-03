@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-steel-gray: #1B1C27;
+  --color-anakiwa: #8ADEFF;
+  --color-cranberry: #DE5971;
+  --color-wild-willow: #9DCE69;
+  --color-atomic-tangerine: #FF9E66;
+  
+  color: #bb9af7;
+  color: #c0caf5;
+  color: #73daca;
+  color: #f7768e;
+  color: #ff9e64;
+}
+
+@layer base {
+  @font-face {
+    font-family: Cascadia Code;
+    src: url(../fonts/cascadia-code/CascadiaCode.woff2) format("woff");
+  }
+}
+
+.posting-item a {
+  text-decoration: none;
+}
