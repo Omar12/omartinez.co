@@ -1,22 +1,27 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const IndexPage = props => {
   const posts = props.data.allMdx
-  console.log(posts)
   return (
     <Layout>
       <SEO title="Home" />
       {posts.edges.map(({ node }) => (
-        <div className="home-list">
-          <Link to={node.fields.slug} key={node.fields.slug} className="link">
-            <div className="post-list">
-              <h1>{node.frontmatter.title}</h1>
-              <span>{node.frontmatter.date}</span>
-              <p>{node.excerpt}</p>
+        <div className="posting-item pb-9" key={node.frontmatter.title}>
+          <Link
+            to={node.fields.slug}
+            key={node.fields.slug}
+            className="no-underline text-anakiwa-500"
+          >
+            <div className="post-details">
+              <h1 className="text-wild-willow-500">{node.frontmatter.title}</h1>
+              <p className="text-anakiwa-500">{node.excerpt}</p>
+              <span className="text-atomic-tangerine-500">
+                {node.frontmatter.date}
+              </span>
             </div>
           </Link>
         </div>
