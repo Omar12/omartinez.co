@@ -2,7 +2,7 @@ import React from "react"
 import AboutLinks from "../components/aboutLinks"
 
 const AboutPage = () => (
-  <div className="text-perfume-500">
+  <div className="text-perfume-500 font-light text-sm">
     <h4 className="text-xl pb-2">Who Am I?</h4>
     <p>
       My name is Omar Martinez. I’m a Lead Frontend Software Developer based out
