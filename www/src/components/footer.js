@@ -6,7 +6,7 @@ const Footer = () => (
   <footer className="bg-anakiwa-200 text-steel-gray-500">
     <div className="px-10 py-6 w-4/6">
       <About />
-      <div className="pt-3">{new Date().getFullYear()}</div>
+      <div className="pt-3 text-sm">{new Date().getFullYear()}</div>
     </div>
   </footer>
 )
