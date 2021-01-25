@@ -11,7 +11,7 @@ const AboutPage = () => (
       This site is an attempt to share my thoughts and learnings. I love
       technology, music and video games. My dream job is to be a DJ{" "}
       <span role="img" aria-label="Black heart and headphones!">
-        🖤 🎧
+        🖤🎧
       </span>
       .
     </p>
