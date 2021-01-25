@@ -1,0 +1,49 @@
+---
+title: Useful Terminal Tips
+path: /useful-terminal-tips
+date: 2021-01-25
+---
+
+# Useful Terminal Tips
+
+If you are like me, you use the command line daily and like any tool that you use for many tasks, it's worth spending time learning how to use them. The following are some quick tips to improve your command line experience.
+
+## Keyboard Shortcuts
+* `ctrl-r` : history search commands
+* `ctrl-a` : go to beginning of line
+* `ctrl-e` : go to end of line
+* `ctrl-u` : delete line
+
+## Must-have Tools
+* fzf: `ctrl+r` (reverse search) on steroids ([https://github.com/junegunn/fzf](https://github.com/junegunn/fzf)) - I highly encourage to install the optional tools and shortcuts, it includes to use `ctrl+r`
+* autojump ([https://github.com/wting/autojump](https://github.com/wting/autojump)): `j foo` will jump directories to my /whatever/foo directory.
+* jq: ([https://stedolan.github.io/jq/](https://stedolan.github.io/jq/)) - Command-line JSON processor.
+
+## dotfiles
+dotfiles is commonly referred to repositories that store your terminal environment settings. This can be a huge time-saver when you are getting your terminal environment up and running. 
+
+For more information and inspiration, visit [https://dotfiles.github.io/](https://dotfiles.github.io/) 
+
+Or you can look at my [dotfiles](https://github.com/Omar12/dotfiles)
+
+## Other Tips
+1. create aliases for everything in ~/.bashrc to speed things up
+3.  `echo $?`  : show the exit code of my last command.
+4. `sudo !!`  : run the previous command as sudo (so useful when you forgot to sudo a long command)
+
+### Using the caret (^) character to correct mistakes.
+Imagine you write something like this:
+`npm i eslunt`
+
+You wanted eslint, not eslunt!
+Easy fix:
+`^eslunt^eslint`
+
+This is especially useful if you are passing multiple arguments on your command.
+
+### ctrl+r for reverse searching of previous command
+add a "# tags" at any commands end to use above for future.
+so lets say you have a ssh into multiple servers
+$ ssh -Uasfd host1 # server1
+$ ssh -Uaiouhqe host2 # server2
+then later, ctrl+r -> and type ver1
