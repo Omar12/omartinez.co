@@ -20,6 +20,7 @@
   @font-face {
     font-family: Cascadia Code;
     src: url(../fonts/cascadia-code/CascadiaCode.woff2) format("woff");
+    font-display: swap;
   }
 }
 
