@@ -93,6 +93,11 @@ module.exports = {
             h4: {
               color: "#B6DB8F",
             },
+            code: {
+              background: "#E8F4DC",
+              color: "#36511A",
+              padding: ".25rem",
+            },
           },
         },
       },

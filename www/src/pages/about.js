@@ -9,7 +9,11 @@ const AboutPage = () => (
       of Seattle. I've been a developer professionally for 16 years. I’ve been
       known as a “Jack of All Trades”. I work most of the time in JavaScript.
       This site is an attempt to share my thoughts and learnings. I love
-      technology, music and video games. My dream job is to be a DJ 🖤 🎧.
+      technology, music and video games. My dream job is to be a DJ{" "}
+      <span role="img" aria-label="Black heart and headphones!">
+        🖤 🎧
+      </span>
+      .
     </p>
     <AboutLinks />
   </div>
