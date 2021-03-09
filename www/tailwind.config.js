@@ -98,6 +98,10 @@ module.exports = {
               color: "#36511A",
               padding: ".25rem",
             },
+            blockquote: {
+              color: "#70749E",
+              background: "#060609",
+            },
           },
         },
       },
